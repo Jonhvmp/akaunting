@@ -2,14 +2,18 @@
     "name": "akaunting",
     "version": "3.0.13",
     "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
+        "scripts": {
+            "dev": "npm run development",
+            "development": "mix",
+            "watch": "mix watch",
+            "watch-poll": "mix watch -- --watch-options-poll=1000",
+            "hot": "mix watch --hot",
+            "prod": "npm run production",
+            "production": "mix --production",
+            "lint": "eslint --ext .js,.vue resources/js",
+            "lint-fix": "eslint --ext .js,.vue resources/js --fix",
+            "test": "jest",
+            "test-watch": "jest --watch"
     },
     "dependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.8.3",
